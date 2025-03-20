@@ -62,7 +62,7 @@
 
     <script>
         // 替换为你的云函数URL
-        const API_URL = 'YOUR_CLOUD_FUNCTION_URL';
+        const API_URL = 'https://q1rk1f894j.hzh.sealos.run/get-qq';
 
         // 获取页面元素
         const loadingElement = document.getElementById('loading');
@@ -73,7 +73,7 @@
 
         async function fetchQQNumber() {
             try {
-                const response = await fetch(https://q1rk1f894j.hzh.sealos.run/get-qq, {
+                const response = await fetch(API_URL, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
