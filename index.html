@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LanData 数据查询系统</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #1a73e8, #0d47a1);
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .welcome-container {
+            text-align: center;
+            animation: fadeIn 1s ease-in;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .action-button {
+            padding: 1rem 2.5rem;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .register-btn {
+            background: #ffffff;
+            color: #1a73e8;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .login-btn {
+            background: rgba(255,255,255,0.1);
+            color: white;
+            border: 2px solid white;
+        }
+
+        .action-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .decorative-line {
+            width: 80px;
+            height: 4px;
+            background: white;
+            margin: 2rem auto;
+            border-radius: 2px;
+        }
+
+        .version {
+            position: absolute;
+            bottom: 20px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-container">
+        <h1>欢迎来到LanData查询系统</h1>
+        <div class="decorative-line"></div>
+        <div class="button-group">
+            <a href="reg.html" class="action-button register-btn">立即注册</a>
+            <a href="login.html" class="action-button login-btn">已有账号登录</a>
+        </div>
+        <div class="version">Version 2.0.0</div>
+    </div>
+
+    <!-- 可选：增加背景动态粒子效果 -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        // 简单粒子背景初始化
+        particlesJS('body', {
+            particles: {
+                color: '#fff',
+                shape: 'circle',
+                opacity: 0.5,
+                size: 3,
+                number: { value: 50 },
+                move: {
+                    enable: true,
+                    speed: 1,
+                    direction: 'none',
+                    random: true
+                }
+            }
+        });
+    </script>
+</body>
+</html>
